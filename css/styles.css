@@ -246,7 +246,7 @@ body {
   background-color: #256e99;
 }
 
-/* SECCION DE FRASE */
+/* SECCION DE FRASE MOTIVADORA*/
 .contenedor-frase {
   position: relative;
   width: 99%;
@@ -384,7 +384,6 @@ body {
 
 /* estilos p de el slider de valores */
 .slider .item p {
-  color: #000;
   text-align: justify;
 }
 
@@ -539,7 +538,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 1000;
+
 }
 
 .iconos-redes {
@@ -738,8 +737,6 @@ body {
     justify-content: center;
     margin-right: 20px;
     border-radius: 50px;
-    z-index: 1;
-    /* Asegura que el contenedor de texto esté por encima del contenedor de la frase */
   }
 
   .texto h3 {
@@ -823,35 +820,46 @@ body {
   }
 
   /* RESPONSIVE CONTENEDOR FRASE MOIVADORA */
+
+  /* SECCION DE FRASE MOTIVADORA*/
   .contenedor-frase {
-    width: 90%;
+    position: relative;
+    width: 99%;
     height: 150px;
-    background-color: #CBEFF3;
-    border-radius: 80px;
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px black solid;
     box-shadow: 1px 7px 20px black;
-    margin-left: -4px;
-    position: relative;
-    /* Añadir posición relativa para que z-index funcione */
-    z-index: 0;
-    /* Asegura que el contenedor de la frase esté detrás del texto */
+    overflow: hidden;
+    /* Para que la imagen no se desborde del contenedor */
+  }
+
+  .imagen-motivadora {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/img_cabaña/img-motivadora.jpg);
+    background-size: cover;
+    opacity: 0.9;
   }
 
   .texto-motivador {
+    position: relative;
+    /* Para que el texto esté sobre la imagen */
+    z-index: 0;
+    /* Para que el texto esté por encima de la imagen */
     text-align: center;
   }
 
   .frase-motivadora {
-    margin: 10px 5px;
     font-family: fantasy;
     color: black;
-    align-items: center;
-    font-size: 18px;
+    font-size: 22px;
   }
-
 
   /* SECCION DE MISION Y VISION */
   .contenedor-general {

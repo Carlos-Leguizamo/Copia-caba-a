@@ -764,9 +764,10 @@ body {
 
   .imagenes:hover .texto {
     transition: height 1s, transform 1s, background-color 1s;
-    transform: translateY(260px);
+    transform: translateY(130px);
     width: 350px;
-    height: 385px;
+    height: 300px;
+    overflow: scroll;
     background-color: rgba(63, 106, 138, 0.71);
   }
 
@@ -844,10 +845,11 @@ body {
     height: 100%;
     background-image: url(../img/img_cabaña/img-motivadora.jpg);
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.7;
   }
 
   .texto-motivador {
+    margin-top: 20px;
     position: relative;
     /* Para que el texto esté sobre la imagen */
     z-index: 0;

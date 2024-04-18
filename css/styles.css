@@ -892,13 +892,7 @@ body {
     color: black;
   }
 
-  .contenedor-mision p,
-  .contenedor-vision p {
-    text-align: justify;
-    margin: 5px 20px;
-    color: black;
-    font-size: 18px;
-  }
+  
 
   /* Estilos compartidos para los contenedores */
 
@@ -909,6 +903,7 @@ body {
     border: 1px black solid;
     border-radius: 40px;
     box-shadow: 1px 7px 20px black;
+    /* overflow: scroll; */
   }
 
   /* SLIDER DE VALORES */
@@ -925,11 +920,13 @@ body {
   }
 
   .slider-container {
+    
     top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
+    
   }
 
   .slider {
@@ -946,13 +943,13 @@ body {
     margin-top: 350%;
     position: absolute;
     width: 200px;
-    height: 330px;
+    height: 340px;
     text-align: justify;
     background-color: #83B1C2;
     border-radius: 10px;
     padding: 20px;
     transition: 0.5s;
-    left: calc(50% - 110px);
+    left: calc(50% - 105px);
     top: 0;
   }
 
@@ -969,7 +966,7 @@ body {
 
   #next,
   #prev {
-    margin-top: 320%;
+    margin-top: 312%;
     position: absolute;
     top: 40%;
     color: red;
@@ -978,12 +975,12 @@ body {
     font-size: xx-large;
     font-family: monospace;
     font-weight: bold;
-    left: 20px;
+    left: 28px;
   }
 
   #next {
     left: unset;
-    right: 50px;
+    right: 40px;
   }
 
 

@@ -190,54 +190,101 @@ color: black;
 opacity: 0.8;
 }
 
-/* FOOTER */
+/* BOTON FLOTANTE REDES SOCIALES */
 
-.footer {
-width: 100%;
-height: auto;
-background-color: #83B1C2;
-margin-top: 20px;
+/* Estilos para el botón flotante */
+.floating-button {
+    position: fixed;
+    bottom: 60px;
+    right: 24px;
+    /* Alineado a la derecha */
+    background-color: #007bff;
+    color: white;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
 }
 
 .iconos-redes {
-display: flex;
-justify-content: center;
-color: black;
+    position: fixed;
+    bottom: 120px;
+    right: 24px;
+    /* Posición inicial */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, right 0.3s ease;
+    /* Agregamos la transición para la opacidad y la posición */
+}
+
+
+.iconos-redes.show {
+    opacity: 1;
 }
 
 .iconos-redes a {
-all: unset;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #256e99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    /* Agrega una transición suave */
 }
 
-.iconos-redes i {
-font-size: 40px;
-margin: 25px 15px 20px 0;
+.iconos-redes.show a:nth-child(1) {
+    transform: translateY(0px) rotate(0deg);
+    /* Primero icono, no se desplaza */
 }
 
-.iconos-redes a i:hover {
-color: black; /* Cambiar color al pasar el curso*/
-transform: scale(1.1); /* Aumentar tamaño al pasar el cursor */
-cursor: pointer;
+.iconos-redes.show a:nth-child(2) {
+    transform: translateY(0px) rotate(0deg);
+    /* Segundo icono, no se desplaza */
 
+    /* Si le meto 360 grados, queda chevere la animacion */
+
+
+}
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #83B1C2;
+}
+
+.p-footer {
+    margin-top: 20px;
 }
 
 .footer p {
-text-align: center;
-color: black;
+
+    text-align: center;
+    color: black;
 }
 
 /* BOTON SUBIR PAGINA */
 
 .ir-arriba {
-font-size: 20px;
-color: black;
-cursor: pointer;
-position: fixed;
-bottom: 10px;
-right: 10px;
-z-index: 2;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: -500px;
+    z-index: 2;
 }
-
 /* ----------------EMPIEZA SECCION DE RESPONSIVE-------------------------------------- */
 
 .btn-link.nav-link.dropdown-toggle{

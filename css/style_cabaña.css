@@ -316,7 +316,7 @@ img:hover {
     cursor: pointer;
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: -500px;
     z-index: 2;
 }
 

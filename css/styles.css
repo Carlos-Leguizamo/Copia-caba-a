@@ -447,7 +447,7 @@ body {
   font-size: xx-large;
   font-family: monospace;
   font-weight: bold;
-  left: 70px;
+  left: 80px;
 }
 
 #next {
@@ -521,7 +521,7 @@ body {
 }
 
 
-/* BOTON RLOTANTE REDEES SOCIALES */
+/* BOTON FLOTANTE REDES SOCIALES */
 
 /* Estilos para el botón flotante */
 .floating-button {
@@ -611,7 +611,7 @@ body {
   cursor: pointer;
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  right: -500px;
   z-index: 2;
 }
 

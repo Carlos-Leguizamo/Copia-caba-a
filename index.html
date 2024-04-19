@@ -12,7 +12,17 @@
   <title> Incio | Cabaña Ancla</title>
 </head>
 
-<body>
+<!-- LOAADER -->
+
+<body class="hidden">
+  <div class="centrado" id="onload">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 
   <header class="header" id="header">
 
@@ -86,7 +96,7 @@
     </ul>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+      </script>
     <script src="./js/index.js" defer></script>
     <script src="./js/letra.js"></script>
   </header>
@@ -126,8 +136,8 @@
       <p class="frase-motivadora">"Deja que la naturaleza te inspire, más que un alojamiento, una experiencia."</p>
     </div>
   </div>
-  
-        
+
+
   <!-- SECCION DE MISION Y VISION -->
 
   <div class="contenedor-general">
@@ -169,7 +179,8 @@
       <div class="item">
         <h1>COMPROMISO</h1>
         <p>
-          Cabaña El Ancla es un ejemplo de responsabilidad en un entorno natural intocado. No solo ofrece alojamiento, sino que también se compromete con el medio ambiente, la comunidad local y la experiencia de los visitantes.
+          Cabaña El Ancla es un ejemplo de responsabilidad en un entorno natural intocado. No solo ofrece alojamiento,
+          sino que también se compromete con el medio ambiente, la comunidad local y la experiencia de los visitantes.
         </p>
       </div>
       <div class="item">
@@ -208,65 +219,68 @@
   </div>
   <button id="next">&gt;</button>
   <button id="prev">&lt;</button>
-  
-     </div> <script src="./js/valores.js">
-      </script>
 
-      <!-- SECCION DE RESEÑA -->
+  </div>
+  <script src="./js/valores.js">
+  </script>
 
-      <div class="container">
-        <h1>Deja tu reseña</h1>
-        <div class="review-form">
-          <input type="text" id="inputName" placeholder="Tu nombre">
-          <textarea id="inputReview" placeholder="Escribe tu reseña aquí"></textarea>
-          <div class="rating">
-            <label for="stars">Calificación:</label>
-            <input type="number" id="stars" name="stars" min="1" max="5" step="1" value="5">
-          </div>
-          <button class="btn-reseña" id="submitReview">Enviar reseña</button>
-        </div>
-        <div id="reviews"></div>
+  <!-- SECCION DE RESEÑA -->
+
+  <div class="container">
+    <h1>Deja tu reseña</h1>
+    <div class="review-form">
+      <input type="text" id="inputName" placeholder="Tu nombre">
+      <textarea id="inputReview" placeholder="Escribe tu reseña aquí"></textarea>
+      <div class="rating">
+        <label for="stars">Calificación:</label>
+        <input type="number" id="stars" name="stars" min="1" max="5" step="1" value="5">
       </div>
-      <script src="./js/reseña.js"></script>
+      <button class="btn-reseña" id="submitReview">Enviar reseña</button>
+    </div>
+    <div id="reviews"></div>
+  </div>
+  <script src="./js/reseña.js"></script>
 
-      <!-- BOTON FLOTANTE REDES SOCIALES -->
-      <div class="floating-button" id="floatingButton">
-        <i class="fas fa-share"></i>
-        <div class="iconos-redes">
-          <a href="https://www.facebook.com/profile.php?id=100076069230788&mibextid=ZbWKwL" target="_blank"><i
-              class="fab fa-facebook"></i></a>
-          <a href="https://wa.me/+573208164195?text=Hola%2C%20estoy%20interesado%20en%20tu%20producto/servicio"
-            target="_blank"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </div>
+  <!-- BOTON FLOTANTE REDES SOCIALES -->
+  <div class="floating-button" id="floatingButton">
+    <i class="fas fa-share"></i>
+    <div class="iconos-redes">
+      <a href="https://www.facebook.com/profile.php?id=100076069230788&mibextid=ZbWKwL" target="_blank"><i
+          class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/+573208164195?text=Hola%2C%20estoy%20interesado%20en%20tu%20producto/servicio"
+        target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
 
-      <script src="./js/redes.js"></script>
+  <script src="./js/redes.js"></script>
 
-      <!-- FOOTER -->
+  <!-- FOOTER -->
 
-      <footer class="footer">
-        <div class="p-footer">
-          <p>Términos de uso web | Aviso de Privacidad | Política de tratamiento de datos | Reversión de pago |
-            Política de garantias</p>
-          <p><span id="año"></span> Cabaña El Ancla. Reservados todos los derechos</p>
-        </div>
+  <footer class="footer">
+    <div class="p-footer">
+      <p>Términos de uso web | Aviso de Privacidad | Política de tratamiento de datos | Reversión de pago |
+        Política de garantias</p>
+      <p><span id="año"></span> Cabaña El Ancla. Reservados todos los derechos</p>
+    </div>
 
-      </footer>
+  </footer>
 
-      <script>
-        const year = new Date().getFullYear();
-        document.getElementById("año").textContent = "© " + year;
-      </script>
+  <script>
+    const year = new Date().getFullYear();
+    document.getElementById("año").textContent = "© " + year;
+  </script>
 
-      <a class="ir-arriba visible" href="#header" id="botonArriba">
-        <span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
+  <a class="ir-arriba visible" href="#header" id="botonArriba">
+    <span class="fa-stack">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
 
-      <script src="./js/boton-arriba.js"></script>
-      <script src="./js/no-scroll.js"></script>
+  <script src="./js/boton-arriba.js"></script>
+  <script src="./js/no-scroll.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./js/codigo.js"></script>
 </body>
 
 </html>
